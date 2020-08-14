@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".LifeRound">
 
+    <TextView
+        android:id="@+id/textViewOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="打开新的"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭当前"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOpen" />
 </androidx.constraintlayout.widget.ConstraintLayout>

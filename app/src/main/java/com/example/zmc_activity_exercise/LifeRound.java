@@ -2,8 +2,11 @@ package com.example.zmc_activity_exercise;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 public class LifeRound extends AppCompatActivity {
 
@@ -13,6 +16,23 @@ public class LifeRound extends AppCompatActivity {
         setContentView(R.layout.activity_liferound);
 
         Log.e("Life Round","LR,onCreate");
+
+        TextView open = findViewById(R.id.textViewOpen);
+        open.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LifeRound.this,Second_Activity2.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView close = findViewById(R.id.textViewClose);
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     @Override
