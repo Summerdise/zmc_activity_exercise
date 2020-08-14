@@ -15,10 +15,13 @@ public class Second_Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_second_2);
         TextView contactsWay = findViewById(R.id.contacts_way);
         String contactsInformation = "";
-        String contactsName = getIntent().getStringExtra("name");
-        String contactsPhone = getIntent().getStringExtra("phone");
+        String contactsName = (getIntent().getStringExtra("name")==null)?"":getIntent().getStringExtra("name");
+        String contactsPhone = (getIntent().getStringExtra("phone")==null)?"":getIntent().getStringExtra("phone");
         contactsInformation = contactsName +contactsPhone;
-        contactsWay.setText(contactsInformation);
+        if(!contactsInformation.equals("")){
+            contactsWay.setText(contactsInformation);
+        }
+
 
 
         TextView chooseContacts = findViewById(R.id.choose_contacts);
