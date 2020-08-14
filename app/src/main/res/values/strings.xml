@@ -2,4 +2,6 @@
     <string name="app_name">Zmc_activity_exercise</string>
     <string name="activity_practice">Activity Practice</string>
     <string name="choose_person">选择联系人</string>
+    <string name="contacts_phone">13012345678</string>
+    <string name="contacts_name">张三</string>
 </resources>
