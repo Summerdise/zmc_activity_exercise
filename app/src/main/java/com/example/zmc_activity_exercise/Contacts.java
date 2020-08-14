@@ -28,6 +28,7 @@ public class Contacts extends AppCompatActivity {
                 intent.putExtra("name",name);
                 intent.putExtra("phone",phone);
                 startActivity(intent);
+                finish();
             }
         });
     }
