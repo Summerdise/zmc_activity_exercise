@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class Second_Activity2 extends AppCompatActivity {
 
     @Override
@@ -33,5 +35,7 @@ public class Second_Activity2 extends AppCompatActivity {
                 finish();
             }
         });
+
+        TextView lifeRound = findViewById(R.id.life_round);
     }
 }
